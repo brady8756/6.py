@@ -18,7 +18,9 @@ def check():
     or dict[3] == dict[5]== dict[7] != ' ' ):
         return True
 
-def drawBoard(board):
+def print(board):
+    # 這個函數打印出它被傳遞的棋盤。
+    # "board" 是一個由 10 個字符串組成的列表，代表董事會（忽略索引 0）
     st.write(dict[7], '|' , dict[8] , '|', dict[9])
     st.write('- + - + -') 
     st.write(dict[4], '|' , dict[5] , '|', dict[6])
@@ -28,15 +30,15 @@ def drawBoard(board):
 def main( ):
     move1 = int(text_input('你想怎麼走?'))
     if dict[move1] == ' ':
-      dict[move1] = 'X'
-      drawBoard(theBoard) 
+       dict[move1] = 'X'
+      print(Board) 
     else:
         print('這是被禁止的')
 
     move2 = int(text_input('你想怎麼走?'))
     if dict[move2] == ' ':
-        dict[move2] = 'O'
-       drawBoard(Board)
+       dict[move2] = 'O'
+       print(Board)
     else:
         print('這是被禁止的')
     
@@ -47,4 +49,4 @@ def main( ):
 
 a = st.text_input('想玩井字遊戲嗎？（是/否): ')
 if a =='是':
-      drawBoard(theBoard)
+      print(Board)
