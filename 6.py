@@ -20,7 +20,8 @@ def check():
     or dict[3] == dict[5]== dict[7] != ' ' ):
         return True
 
-def print_board():
+# 列印方法
+def drawBoard(board):
     st.write(dict[7], '|' , dict[8] , '|', dict[9])
     st.write('- + - + -') 
     st.write(dict[4], '|' , dict[5] , '|', dict[6])
@@ -28,19 +29,19 @@ def print_board():
     st.write(dict[1], '|' , dict[2] , '|', dict[3])
      
 def main( ):
-    move1 = int(text_input('你想下哪一格?'))
+    move1 = int(text_input('你想走哪一格?'))
     if dict[move1] == ' ':
       dict[move1] = 'X'
     else:
         st.write('這是錯誤的移動')
-    print_board()
+    print_board
 
-    move2 = int(text_input('你想下哪一格?'))
+    move2 = int(text_input('你想走哪一格?'))
     if dict[move2] == ' ':
         dict[move2] = 'O'
     else:
         st.write('這是錯誤的移動')
-    print_board()
+    print_board
     
     if check():
         st.write('game over')
