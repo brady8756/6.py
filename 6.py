@@ -29,7 +29,7 @@ def main( ):
     move1 = int(text_input('你想怎麼走?'))
     if dict[move1] == ' ':
       dict[move1] = 'X'
-       drawBoard(theBoard)
+      drawBoard(theBoard)
     else:
         print('這是被禁止的')
 
