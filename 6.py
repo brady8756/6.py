@@ -31,16 +31,16 @@ def main( ):
     move1 = int(text_input('你想怎麼走?'))
     if dict[move1] == ' ':
        dict[move1] = 'X'
-      print_board()
     else:
         print('這是被禁止的')
+            print_board()
 
     move2 = int(text_input('你想怎麼走?'))
     if dict[move2] == ' ':
        dict[move2] = 'O'
-      print_board()
     else:
         print('這是被禁止的')
+            print_board()
     
     if check():
         print('game over')
