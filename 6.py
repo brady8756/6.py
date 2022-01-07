@@ -48,7 +48,7 @@ def main( ):
         main()
 
 
-a = st.text_input('想玩井字遊戲嗎？（是): ')
+a = st.text_input('想玩井字遊戲嗎？)是: ')
 if a =='是':
 
     main()
