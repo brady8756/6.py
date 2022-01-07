@@ -28,14 +28,14 @@ def print_board():
     st.write(dict[1], '|' , dict[2] , '|', dict[3])
      
 def main( ):
-    move1 = int(text_input('你想下哪一格?'))
+    move1 = st.text_input('你想下哪一格?'))
     if dict[move1] == ' ':
       dict[move1] = 'X'
     else:
         print('這是錯誤的移動')
     print_board()
 
-    move2 = int(text_input('你想下哪一格?'))
+    move2 = st.text_input('你想下哪一格?'))
     if dict[move2] == ' ':
         dict[move2] = 'O'
     else:
