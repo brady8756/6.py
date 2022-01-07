@@ -29,16 +29,16 @@ def main( ):
     move1 = int(text_input('你想怎麼走?'))
     if dict[move1] == ' ':
       dict[move1] = 'X'
+       drawBoard(theBoard)
     else:
         print('這是被禁止的')
-    print_board()
 
     move2 = int(text_input('你想怎麼走?'))
     if dict[move2] == ' ':
         dict[move2] = 'O'
+       drawBoard(theBoard)
     else:
         print('這是被禁止的')
-    print_board()
     
     if check():
         print('game over')
@@ -47,4 +47,4 @@ def main( ):
 
 a = st.text_input('想玩井字遊戲嗎？（是/否): ')
 if a =='是':
-            main()
+      drawBoard(theBoard)
