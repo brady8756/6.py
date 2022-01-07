@@ -52,4 +52,4 @@ if a =='是':
 
     main()
 else:
-    wt.write('可憐')
+    wt.write('break')
