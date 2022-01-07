@@ -47,7 +47,6 @@ def main( ):
     else:
         main()
 
-
 a = st.text_input('想玩井字遊戲嗎？是/否')
 if a =='是':
 
