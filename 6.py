@@ -30,23 +30,27 @@ def print_board():
 def main( ):
     move1 = int(text_input('你想怎麼走?'))
     if dict[move1] == ' ':
-       dict[move1] = 'X'
+      dict[move1] = 'X'
     else:
         print('這是被禁止的')
-            print_board()
+    print_board()
 
     move2 = int(text_input('你想怎麼走?'))
     if dict[move2] == ' ':
-       dict[move2] = 'O'
+        dict[move2] = 'O'
     else:
         print('這是被禁止的')
-            print_board()
+    print_board()
     
     if check():
         print('game over')
     else:
-            main()
+        main()
 
-a = st.text_input('想玩井字遊戲嗎？（是/否): ')
+
+a = st.test_input('想玩井字遊戲嗎？（是/否): ')
 if a =='是':
-      main( )
+
+    main()
+else:
+    wt.write('可憐')
