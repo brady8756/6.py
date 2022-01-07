@@ -43,12 +43,12 @@ def main( ):
     if check():
         print('game over')
     else:
-        main()
+            main()
 
 
 a = st.text_input('想玩井字遊戲嗎？（是/否): ')
 if a =='是':
 
-    main()
+            main()
 else:
     wt.write('可憐')
