@@ -53,4 +53,4 @@ if a =='是':
 
     main()
 else:
-    st.write('可憐')
+    st.write('歡迎來玩')
