@@ -18,7 +18,7 @@ def check():
     or dict[3] == dict[5]== dict[7] != ' ' ):
         return True
 
-def print_board():
+def drawBoard(board):
     st.write(dict[7], '|' , dict[8] , '|', dict[9])
     st.write('- + - + -') 
     st.write(dict[4], '|' , dict[5] , '|', dict[6])
