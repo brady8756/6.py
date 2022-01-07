@@ -20,7 +20,7 @@ def check():
     or dict[3] == dict[5]== dict[7] != ' ' ):
         return True
 
-def st.write_board():
+def print_board():
     st.write(dict[7], '|' , dict[8] , '|', dict[9])
     st.write('- + - + -') 
     st.write(dict[4], '|' , dict[5] , '|', dict[6])
@@ -33,14 +33,14 @@ def main( ):
       dict[move1] = 'X'
     else:
         st.write('這是錯誤的移動')
-    st.write_board()
+    print_board()
 
     move2 = int(text_input('你想下哪一格?'))
     if dict[move2] == ' ':
         dict[move2] = 'O'
     else:
         st.write('這是錯誤的移動')
-    st.write_board()
+    print_board()
     
     if check():
         st.write('game over')
