@@ -46,7 +46,7 @@ def main( ):
         main()
 
 
-a = st.test_input('想玩井字遊戲嗎？（是/否): ')
+a = st.tet_input('想玩井字遊戲嗎？（是/否): ')
 if a =='是':
 
     main()
